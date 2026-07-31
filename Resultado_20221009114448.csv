@@ -1,0 +1,9 @@
+População original: 500
+Cobertura vacinal: 0 % 
+Letalidade da doença: 3 % 
+Infectividade da doença: 20
+
+dias;Mobilidade;Saudável não vacinado;Vacinado;Doente;Recuperados;Mortos
+0;100;500;0;10;0;0
+1;100;500;0;10;0;0
+2;100;492;0;18;0;0

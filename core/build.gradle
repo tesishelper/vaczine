@@ -1,0 +1,18 @@
+apply plugin: "java"
+sourceCompatibility = 1.8
+[compileJava, compileTestJava]*.options*.encoding = 'UTF-8'
+sourceSets.main.java.srcDirs = ["src/"]
+dependencies {
+
+}
+
+/*
+dependencies {
+    implementation files('/home/adolfo/Proyectos_Android/vaczine/android/libs/poiApacheLib/commons-collections4-4.4.jar')
+    implementation files('/home/adolfo/Proyectos_Android/vaczine/android/libs/poiApacheLib/commons-compress-1.19.jar')
+    implementation files('/home/adolfo/Proyectos_Android/vaczine/android/libs/poiApacheLib/poi-4.1.2.jar')
+    implementation files('/home/adolfo/Proyectos_Android/vaczine/android/libs/poiApacheLib/poi-ooxml-4.1.2.jar')
+    implementation files('/home/adolfo/Proyectos_Android/vaczine/android/libs/poiApacheLib/poi-ooxml-schemas-4.1.2.jar')
+    implementation files('/home/adolfo/Proyectos_Android/vaczine/android/libs/poiApacheLib/xmlbeans-3.1.0.jar')
+}
+*/

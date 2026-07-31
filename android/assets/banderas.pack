@@ -1,0 +1,159 @@
+
+banderas.png
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+Brasil
+  rotate: false
+  xy: 1, 775
+  size: 200, 140
+  orig: 200, 140
+  offset: 0, 0
+  index: -1
+Bolivia
+  rotate: false
+  xy: 1, 637
+  size: 200, 136
+  orig: 200, 136
+  offset: 0, 0
+  index: -1
+Panama
+  rotate: false
+  xy: 203, 780
+  size: 200, 135
+  orig: 200, 135
+  offset: 0, 0
+  index: -1
+Peru
+  rotate: false
+  xy: 1, 500
+  size: 200, 135
+  orig: 200, 135
+  offset: 0, 0
+  index: -1
+Uruguay
+  rotate: false
+  xy: 203, 643
+  size: 200, 135
+  orig: 200, 135
+  offset: 0, 0
+  index: -1
+Ecuador
+  rotate: false
+  xy: 405, 782
+  size: 200, 133
+  orig: 200, 133
+  offset: 0, 0
+  index: -1
+RepublicaDominicana
+  rotate: false
+  xy: 1, 365
+  size: 200, 133
+  orig: 200, 133
+  offset: 0, 0
+  index: -1
+Portugal
+  rotate: false
+  xy: 203, 508
+  size: 200, 133
+  orig: 200, 133
+  offset: 0, 0
+  index: -1
+España
+  rotate: false
+  xy: 405, 647
+  size: 200, 133
+  orig: 200, 133
+  offset: 0, 0
+  index: -1
+Chile
+  rotate: false
+  xy: 607, 782
+  size: 200, 133
+  orig: 200, 133
+  offset: 0, 0
+  index: -1
+PuertoRico
+  rotate: false
+  xy: 1, 230
+  size: 200, 133
+  orig: 200, 133
+  offset: 0, 0
+  index: -1
+Venezuela
+  rotate: false
+  xy: 203, 373
+  size: 200, 133
+  orig: 200, 133
+  offset: 0, 0
+  index: -1
+Rusia
+  rotate: false
+  xy: 405, 512
+  size: 200, 133
+  orig: 200, 133
+  offset: 0, 0
+  index: -1
+Italia
+  rotate: false
+  xy: 607, 647
+  size: 200, 133
+  orig: 200, 133
+  offset: 0, 0
+  index: -1
+Colombia
+  rotate: false
+  xy: 809, 782
+  size: 200, 133
+  orig: 200, 133
+  offset: 0, 0
+  index: -1
+Argentina
+  rotate: false
+  xy: 1, 103
+  size: 200, 125
+  orig: 200, 125
+  offset: 0, 0
+  index: -1
+CostaRica
+  rotate: false
+  xy: 203, 249
+  size: 200, 122
+  orig: 200, 122
+  offset: 0, 0
+  index: -1
+Mexico
+  rotate: false
+  xy: 405, 396
+  size: 200, 114
+  orig: 200, 114
+  offset: 0, 0
+  index: -1
+Paraguay
+  rotate: false
+  xy: 607, 535
+  size: 200, 110
+  orig: 200, 110
+  offset: 0, 0
+  index: -1
+EstadosUnidos
+  rotate: false
+  xy: 809, 675
+  size: 200, 105
+  orig: 200, 105
+  offset: 0, 0
+  index: -1
+Cuba
+  rotate: false
+  xy: 1, 1
+  size: 200, 100
+  orig: 200, 100
+  offset: 0, 0
+  index: -1
+Honduras
+  rotate: false
+  xy: 203, 147
+  size: 200, 100
+  orig: 200, 100
+  offset: 0, 0
+  index: -1

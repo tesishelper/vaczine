@@ -1,0 +1,75 @@
+
+pack31.png
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+boton_up
+  rotate: false
+  xy: 1, 809
+  size: 495, 193
+  orig: 495, 193
+  offset: 0, 0
+  index: -1
+text_box
+  rotate: false
+  xy: 1, 614
+  size: 495, 193
+  orig: 495, 193
+  offset: 0, 0
+  index: -1
+boton_down
+  rotate: false
+  xy: 498, 809
+  size: 495, 193
+  orig: 495, 193
+  offset: 0, 0
+  index: -1
+botonFireUP
+  rotate: false
+  xy: 1, 274
+  size: 336, 338
+  orig: 336, 338
+  offset: 0, 0
+  index: -1
+control
+  rotate: false
+  xy: 1, 1
+  size: 269, 271
+  orig: 269, 271
+  offset: 0, 0
+  index: -1
+botonFireDown
+  rotate: false
+  xy: 498, 469
+  size: 336, 338
+  orig: 336, 338
+  offset: 0, 0
+  index: -1
+cursor
+  rotate: false
+  xy: 272, 55
+  size: 46, 217
+  orig: 46, 217
+  offset: 0, 0
+  index: -1
+botonInvisible
+  rotate: false
+  xy: 339, 269
+  size: 196, 198
+  orig: 196, 198
+  offset: 0, 0
+  index: -1
+check_box_off
+  rotate: false
+  xy: 836, 777
+  size: 30, 30
+  orig: 30, 30
+  offset: 0, 0
+  index: -1
+check_box_on
+  rotate: false
+  xy: 272, 23
+  size: 30, 30
+  orig: 30, 30
+  offset: 0, 0
+  index: -1

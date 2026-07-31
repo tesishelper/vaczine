@@ -1,0 +1,40 @@
+
+actores.png
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+vacunado
+  rotate: false
+  xy: 1, 1
+  size: 45, 113
+  orig: 45, 113
+  offset: 0, 0
+  index: -1
+curado
+  rotate: false
+  xy: 48, 5
+  size: 42, 109
+  orig: 42, 109
+  offset: 0, 0
+  index: -1
+enfermo
+  rotate: false
+  xy: 92, 11
+  size: 36, 103
+  orig: 36, 103
+  offset: 0, 0
+  index: -1
+sano
+  rotate: false
+  xy: 130, 13
+  size: 36, 101
+  orig: 36, 101
+  offset: 0, 0
+  index: -1
+muerto
+  rotate: false
+  xy: 168, 82
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1

@@ -1,0 +1,111 @@
+buildscript {
+
+
+    repositories {
+        mavenLocal()
+        mavenCentral()
+        maven { url "https://plugins.gradle.org/m2/" }
+        maven { url "https://oss.sonatype.org/content/repositories/snapshots/" }
+
+        google()
+    }
+    dependencies {
+        // Se mantiene AGP 8.13.0, ya que es una versión moderna y compatible.
+        classpath 'com.android.tools.build:gradle:8.13.0'
+
+
+    }
+}
+
+allprojects {
+
+    version = '1.0'
+    ext {
+        appName = "vaczine"
+        gdxVersion = '1.13.5'
+        // Using a separate, recent version for the controllers extension
+        // because the 1.13.5 artifact is likely missing from the repository.
+        gdxControllersVersion = '2.2.3'
+        roboVMVersion = '2.3.7'
+        box2DLightsVersion = '1.4'
+        ashleyVersion = '1.7.0'
+        aiVersion = '1.8.0'
+        // androidXCore = "1.6.0"
+
+    }
+
+    repositories {
+        mavenLocal()
+        mavenCentral()
+
+        google()
+        maven { url "https://oss.sonatype.org/content/repositories/snapshots/" }
+        maven { url "https://oss.sonatype.org/content/repositories/releases/" }
+    }
+}
+
+project(":desktop") {
+    apply plugin: "java-library"
+
+
+    dependencies {
+        implementation project(":core")
+        api "com.badlogicgames.gdx:gdx-backend-lwjgl:$gdxVersion"
+        api "com.badlogicgames.gdx:gdx-platform:$gdxVersion:natives-desktop"
+        api "com.badlogicgames.gdx:gdx-box2d-platform:$gdxVersion:natives-desktop"
+        api "com.badlogicgames.gdx:gdx-freetype-platform:$gdxVersion:natives-desktop"
+        // FIX: Changed group ID to com.badlogicgames.gdx-controllers and removed redundant platform dependency
+        api "com.badlogicgames.gdx-controllers:gdx-controllers-desktop:$gdxControllersVersion"
+        // Removed: api "com.badlogicgames.gdx:gdx-controllers-platform:$gdxControllersVersion:natives-desktop"
+
+
+
+    }
+}
+
+project(":android") {
+    apply plugin: "android" // Se aplica el plugin Android
+
+    configurations { natives }
+
+    dependencies {
+        implementation project(":core")
+        api "com.badlogicgames.gdx:gdx-backend-android:$gdxVersion"
+        // ** SE ELIMINAN ARQUITECTURAS ARMEABI/ARMEABI-V7A (32 bits obsoletos) **
+        natives "com.badlogicgames.gdx:gdx-platform:$gdxVersion:natives-arm64-v8a"
+        natives "com.badlogicgames.gdx:gdx-platform:$gdxVersion:natives-x86"
+        natives "com.badlogicgames.gdx:gdx-platform:$gdxVersion:natives-x86_64"
+
+        api "com.badlogicgames.gdx:gdx-box2d:$gdxVersion"
+        // ** SE ELIMINAN ARQUITECTURAS ARMEABI/ARMEABI-V7A **
+        natives "com.badlogicgames.gdx:gdx-box2d-platform:$gdxVersion:natives-arm64-v8a"
+        natives "com.badlogicgames.gdx:gdx-box2d-platform:$gdxVersion:natives-x86"
+        natives "com.badlogicgames.gdx:gdx-box2d-platform:$gdxVersion:natives-x86_64"
+
+
+        api "com.badlogicgames.gdx:gdx-freetype:$gdxVersion"
+        // ** SE ELIMINAN ARQUITECTURAS ARMEABI/ARMEABI-V7A **
+        natives "com.badlogicgames.gdx:gdx-freetype-platform:$gdxVersion:natives-arm64-v8a"
+        natives "com.badlogicgames.gdx:gdx-freetype-platform:$gdxVersion:natives-x86"
+        natives "com.badlogicgames.gdx:gdx-freetype-platform:$gdxVersion:natives-x86_64"
+        // FIX: Changed group ID and artifact name to gdx-controllers-core for the core module dependency
+        api "com.badlogicgames.gdx-controllers:gdx-controllers-core:$gdxControllersVersion"
+        api "com.badlogicgames.gdx-controllers:gdx-controllers-android:$gdxControllersVersion"
+
+        // Dependencias adicionales se han movido a build.gradle(:android)
+    }
+}
+
+project(":core") {
+    apply plugin: "java-library"
+
+
+    dependencies {
+        api "com.badlogicgames.gdx:gdx:$gdxVersion"
+        api "com.badlogicgames.gdx:gdx-box2d:$gdxVersion"
+        // FIX: Changed group ID and artifact name to gdx-controllers-core
+        api "com.badlogicgames.gdx-controllers:gdx-controllers-core:$gdxControllersVersion"
+        api "com.badlogicgames.gdx:gdx-freetype:$gdxVersion"
+
+    }
+}
