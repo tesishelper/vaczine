@@ -49,7 +49,7 @@ public class VaczineGame extends Game {
 
 	private SpriteBatch batch;//se usa para dibujar en la pantalla
 
-	float version = (float) 3.19;
+	float version = (float) 3.22;
 	boolean android = true;
 	public boolean debug = false;
 	int musicaOn = -1;

@@ -2,7 +2,7 @@ android {
 
     namespace "com.vaczine"
     // Usamos el último SDK (35) para compilación
-    compileSdk = 35
+    compileSdk = 36
 
     sourceSets {
         main {
@@ -25,15 +25,15 @@ android {
         applicationId "com.vaczine"
         // TargetSdkVersion 35 es el requisito actual de Google Play
         minSdkVersion 23
-        targetSdkVersion 35
-        versionCode 22
-        versionName '3.21'
+        targetSdkVersion 36
+        versionCode 23
+        versionName '3.22'
         multiDexEnabled true
     }
     buildTypes {
         release {
             minifyEnabled true
-            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
 
             ndk {
                 // ** SOLUCIÓN PARA SÍMBOLOS DE DEPURACIÓN **
